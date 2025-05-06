@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/icon/site.webmanifest">
+    <title>Michel Salazar - Portfolio</title>
+</head>
+<body>
+    <!---Header Section--->
+    <header class="header">
+        <a href="#home" class="logo" translate="no">Michel Salazar</a>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        <ul class="navbar">
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About me</a></li>
+            <li> <a href="#skills">skills</a></li>
+            <li> <a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <div class="top-btn">
+            <a href="#contact" class="nav-btn btnContac">Contact Me</a>
+        </div>
+    </header>
+    <!---Home Section Code--->
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h3>Hi, I am</h3>
+                <h1 translate="no">Michel Salazar</h1>
+                <h3>a <span class="multiple-text"></span></h3>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/michelsr145" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Michelito-sr145" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/michel.sr145" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/Michel.sr145" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/Michel_sr145" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <div class="home-cv">
+                <a href="assets/cv/CV_Michel_Salazar.pdf" target="_blank" class="btn">Open the CV</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="assets/Me/mifotoMS.jpg" alt="Profile image">
+        </div>
+    </section>
+    <!---End Home--->
+
+
+    <!---AboutMe and Studie Section Code--->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-me">
+                <h3>I am a developer <span translate="no">Full Stack</span></h3>
+                <p>Passionate about creating innovative and functional solutions.
+                    With experience in developing web applications, designing intuitive interfaces and implementing robust
+                    systems, I am always looking to learn and improve my skills to deliver high-quality projects.
+                    I love taking on new challenges and collaborating in dynamic teams.</p>
+            </div>
+            <div class="studies-content">
+                <div class="studies-box">
+                    <h3>Academic studies</h3>
+                    <div class="education">
+                        <div class="edu-item edu1">
+                            <div>
+                                <h4>Technical School No.19 Alejandro Volta</h4>
+                                <p>Electronics Technician </p>
+                            </div>
+                            <div>
+                                <i class='bx bx-expand bx-burst bx-rotate-90' ></i>
+                            </div>
+                        </div>
+                        <div class="edu-item edu2">
+                            <div>
+                                <h4>Faculty of Engineering - UNLZ</h4>
+                                <p>Technician in Programming</p>
+                            </div>
+                            <div>
+                                <i class='bx bx-expand bx-burst bx-rotate-90' ></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-box">
+                    <h3>Self-taught courses</h3>
+                    <div class="courses">
+                        <div class="course-item C1">
+                            Java Programming - <span translate="no"> Programación ATS</span>
+                            <i class="bx bxl-youtube youtube-icon"></i>
+                        </div>
+                        <div class="course-item C2">
+                            HTML and CSS, Web Development - <span translate="no"> Soy Dalto</span>
+                            <i class="bx bxl-youtube youtube-icon"></i>
+                        </div>
+                        <div class="course-item C3">
+                            Python for backend development - <span translate="no"> MoureDev</span>
+                            <i class="bx bxl-youtube youtube-icon"></i>
+                        </div>
+                        <div class="course-item C4">
+                            Python for Beginners - <span translate="no"> Soy Dalto</span>
+                            <i class="bx bxl-youtube youtube-icon"></i>
+                        </div>
+                        <div class="course-item C5">
+                            Visual Studio Code - <span translate="no"> HolaMundo</span>
+                            <i class="bx bxl-youtube youtube-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Modal Studie Section Code--->
+    <section class="modals modal-studie">
+        <div class="modal-container-studie">
+            <div class="modal-content-studie">
+                <h2 class="modal-title-studie heading">Título dinámico</h2>
+                <p class="modal-descrip-studie">Descripción dinámica</p>
+                <div class="modal-actions-studie">
+                    <a href="#" class="modal-foto-studie btn" target="_blank"><i class='bx bxs-graduation'></i>Certificate</a>
+                    <a href="#" class="modal-link-studie btn" target="_blank"> <i class='bx bx-map'></i>Location</a>
+                </div>
+                <a href="#" class="modal-close-studie btn"><i class='bx bx-exit-fullscreen'></i> Cerrar </a>
+            </div>
+        </div>
+    </section>
+    <!---End AboutMe--->
+
+
+    <!---Skills Section Code--->
+    <section class="skills" id="skills">
+        <h2 class="heading" >Skills <i class='bx bx-expand bx-burst bx-rotate-90' ></i></h2>
+        <div class="skills-content">
+            <!---Programming Languages--->
+            <div class="skills-box">
+                <h2>Programming Languages</h2>
+                <div class="skills-lenguaje">
+                    <div class="media java effect">
+                        <img src="assets/Skills/Languages/java.png" alt="Java">
+                        <h3 translate="no">Java</h3>
+                    </div>
+                    <div class="media python effect">
+                        <img src="assets/Skills/Languages/Python.png" alt="Python">
+                        <h3 translate="no">Python</h3>
+                    </div>
+                    <div class="media html effect">
+                        <img src="assets/Skills/Languages/HTML.png" alt="HTML">
+                        <h3 translate="no">HTML</h3>
+                    </div>
+                    <div class="media css effect">
+                        <img src="assets/Skills/Languages/CSS.png" alt="CSS">
+                        <h3 translate="no">CSS</h3>
+                    </div>
+                    <div class="media javascript effect">
+                        <img src="assets/Skills/Languages/JavaScript.png" alt="JavaScript">
+                        <h3 translate="no">JavaScript</h3>
+                    </div>
+                    <div class="media vb_net effect">
+                        <img src="assets/Skills/Languages/VB,NET.png" alt="VB.NET">
+                        <h3 translate="no">VB.NET</h3>
+                    </div>
+                </div>
+            </div>
+            <!---Development Environments--->
+            <div class="skills-box">
+                <h2>Development Environments</h2>
+                <div class="skills-lenguaje">
+                    <div class="media">
+                        <img src="assets/Skills/IDE/EclipseIDE.png" alt="Eclipse IDE">
+                        <h3 translate="no">Eclipse IDE</h3>
+                    </div>
+                    <div class="media">
+                        <img src="assets/Skills/IDE/VisualStudio.png" alt="Visual Studio">
+                        <h3 translate="no">Visual Studio</h3>
+                    </div>
+                    <div class="media visualstudiocode effect">
+                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="Visual Studio Code">
+                        <h3 translate="no">Visual Studio Code</h3>
+                    </div>
+                </div>
+            </div>
+            <!---Database--->
+            <div class="skills-box">
+                <h2>Database</h2>
+                <div class="skills-lenguaje">
+                    <div class="media mysql effect">
+                        <img src="assets/Skills/Database/MySQL.png" alt="MySQL">
+                        <h3 translate="no">MySQL</h3>
+                    </div>
+                    <div class="media sqlServer effect">
+                        <img src="assets/Skills/Database/SQL-Server.png" alt="SQL Server">
+                        <h3 translate="no">SQL Server</h3>
+                    </div>
+                </div>
+            </div>
+            <!---Tools--->
+            <div class="skills-box">
+                <h2>Tools</h2>
+                <div class="skills-lenguaje">
+                    <div class="media xampp effect">
+                        <img src="assets/Skills/Tools/xampp.png" alt="XAMPP">
+                        <h3 translate="no">XAMPP</h3>
+                    </div>
+                    <div class="media postman effect">
+                        <img src="assets/Skills/Tools/Postman.png" alt="Postman">
+                        <h3 translate="no">Postman</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-box">
+                <h2>Languages</h2>
+                <div class="skills-lenguaje">
+                    <!-- Español -->
+                    <div class="media">
+                    <p class="lang-level">Spanish</p>
+                    <img src="assets/Skills/Lang/Español.png" alt="Spanish">
+                    <h3>Native</h3>
+                    </div>
+                    <!-- Inglés -->
+                    <div class="media">
+                    <p class="lang-level">English</p>
+                    <img src="assets/Skills/Lang/Ingles.png" alt="English">
+                    <h3>Básic (A2)</h3>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!---Modal Skills Section Code--->
+    <section class="modals modal-skills">
+        <div class="modal-container-skills">
+            <div class="modal-content-skills">
+                <h2 class="modal-title-skills heading">Título dinámico</h2>
+                <p class="modal-descrip-skills">Descripción dinámica</p>
+            </div>
+            <a href="#" class="modal-close-skills btn"><i class='bx bx-exit-fullscreen'></i> Cerrar </a>
+        </div>
+    </section>
+    <!---End Skills--->
+
+
+    <!---Proyect Section Code--->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"><span>Projects</span></h2>
+        <div class="portfolio-content">
+            <!---TallerTextil--->
+            <div class="row">
+                <!-- Carrusel -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <img src="assets/Proyects/TallerTextil/1.png">
+                        <img src="assets/Proyects/TallerTextil/2.png">
+                        <img src="assets/Proyects/TallerTextil/3.png">
+                        <img src="assets/Proyects/TallerTextil/4.png">
+                        <img src="assets/Proyects/TallerTextil/5.png">
+                        <img src="assets/Proyects/TallerTextil/6.png">
+                        <img src="assets/Proyects/TallerTextil/7.png">
+                        <img src="assets/Proyects/TallerTextil/8.png">
+                        <img src="assets/Proyects/TallerTextil/9.png">
+                        <img src="assets/Proyects/TallerTextil/10.png">
+                    </div>
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
+                    <a class="type-app desktop type">
+                        <i class='bx bx-desktop'></i><span class="tooltip">Desktop App</span>
+                    </a>
+                    <a class="type-status production type">
+                        <i class='bx bx-check-shield'></i><span class="tooltip">Production</span>
+                    </a>
+                </div>
+                <!-- Información principal -->
+                <div class="main">
+                    <h4>Taller Textil</h4>
+                    <p>Desktop application that enables management of textile supply entries, exits, and stock through a modern, functional interface. It implements full CRUD operations and inventory flow control.</p>
+                </div>
+                <!-- Tecnologías usadas Y Links-->
+                <div class="portfolio-skills">
+                    <div class="tech-stack">
+                        <img src="assets/Skills/database/SQL-Server.png" alt="">
+                        <img src="assets/Skills/IDE/VisualStudio.png" alt="">
+                        <img src="assets/Skills/Languages/VB,NET.png" alt="">
+                    </div>
+                    <div class="link-portfolio">
+                        <a href="https://PaginaWeb.com" target="_blank"><i class='bx bx-globe' ></i></a>
+                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!---Nutricion Animal--->
+            <div class="row">
+                <!-- Carrusel -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <img src="assets/Proyects/SistemaWeb/1.png">
+                        <img src="assets/Proyects/SistemaWeb/2.png">
+                        <img src="assets/Proyects/SistemaWeb/3.png">
+                        <img src="assets/Proyects/SistemaWeb/4.png">
+                        <img src="assets/Proyects/SistemaWeb/5.png">
+                        <img src="assets/Proyects/SistemaWeb/6.png">
+                        <img src="assets/Proyects/SistemaWeb/7.png">
+                        <img src="assets/Proyects/SistemaWeb/8.png">
+                        <img src="assets/Proyects/SistemaWeb/9.png">
+                        <img src="assets/Proyects/SistemaWeb/10.png">
+                        <img src="assets/Proyects/SistemaWeb/11.png">
+                        <img src="assets/Proyects/SistemaWeb/12.png">
+                    </div>
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
+                    <a class="type-app web type">
+                        <i class='bx bx-globe'></i><span class="tooltip">Website</span>
+                    </a>
+                    <a class="type-status Academic type">
+                        <i class='bx bxs-graduation'></i><span class="tooltip">Academic</span>
+                    </a>
+                </div>
+                <!-- Información principal -->
+                <div class="main">
+                    <h4>Nutricion Animal</h4>
+                    <p>Este proyecto consiste en el desarrollo de un sitio web moderno con tecnologías avanzadas.</p>
+                </div>
+                <!-- Tecnologías usadas -->
+                <div class="portfolio-skills">
+                    <div class="tech-stack">
+                        <img src="assets/Skills/Languages/java.png" alt="">
+                    </div>
+                    <div class="link-portfolio">
+                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!---App OffPc--->
+            <div class="row">
+                <!-- Carrusel -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <img src="assets/Proyects/OffPc/1.png" alt="">
+                        <img src="assets/Proyects/OffPc/2.png" alt="">
+                        <img src="assets/Proyects/OffPc/3.png" alt="">
+                    </div>
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
+                    <a class="type-app desktop type">
+                        <i class='bx bx-desktop'></i><span class="tooltip">Desktop App</span>
+                    </a>
+                    <a class="type-status production type">
+                        <i class='bx bx-check-shield'></i><span class="tooltip">Production</span>
+                    </a>
+                </div>
+                <!-- Información principal -->
+                <div class="main">
+                    <h4>App OffPc</h4>
+                    <p>Application developed with <span>Tkinter</span> that lets you set a timer to automatically shut down the operating system (Windows only). When the countdown ends, it displays a farewell message before executing the shutdown command.</p>
+                </div>
+                <!-- Tecnologías usadas -->
+                <div class="portfolio-skills">
+                    <div class="tech-stack">
+                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="">
+                        <img src="assets/Skills/Languages/Python.png" alt="">
+                    </div>
+                    <div class="link-portfolio">
+                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+            <!---Cleam PC--->
+            <div class="row">
+                <!-- Carrusel -->
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <img src="assets/Proyects/Clean-Pc/1.png" alt="">
+                        <img src="assets/Proyects/Clean-Pc/2.png" alt="">
+                    </div>
+                    <label for="slide1" class="prev">&#10094;</label>
+                    <label for="slide2" class="next">&#10095;</label>
+                    <a class="type-app desktop type">
+                        <i class='bx bx-desktop'></i><span class="tooltip">Desktop App</span>
+                    </a>
+                    <a class="type-status production type">
+                        <i class='bx bx-check-shield'></i><span class="tooltip">Production</span>
+                    </a>
+                </div>
+                <!-- Información principal -->
+                <div class="main">
+                    <h4>Cleam PC</h4>
+                    <p>This application cleans the PC by removing unnecessary files from the “Temp”, “%temp%”, and “Prefetch” folders. Once the process is complete, it creates a <span>.txt</span> file listing the paths of any files that could not be deleted.</p>
+                </div>
+                <!-- Tecnologías usadas -->
+                <div class="portfolio-skills">
+                    <div class="tech-stack">
+                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="">
+                        <img src="assets/Skills/Languages/Python.png" alt="">
+                    </div>
+                    <div class="link-portfolio">
+                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---End Proyect--->
+
+
+    <!---Contac me Section Code--->
+    <section class="contact" id="contact">
+        <h2 class="heading" >Contact<span>Me</span></h2>
+        <div class="contact-content">
+            <div class="contact-perfil">
+                <img src="assets/Me/Dibujo.jpg" alt="Profile Picture of Michel" class="profile-photo">
+                <div class="social-media">
+                    <a href="https://wa.me/+5491167623090" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://discord.gg/michelito145#4377" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&to=michelroncal2002@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+            <div class="contact-Form">
+                <p class="warning">Fill out the form with your name, number or email, and your message.</p>
+                <form id="contact-form">
+                    <div class="input-box">
+                        <input type="text" id="fullName" placeholder="Full Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" id="phone" placeholder="Phone Number">
+                        <input type="email" id="email" placeholder="Email Address">
+                    </div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="button" id="send-btn" class="btn disabled" disabled>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Captcha Section -->
+    <section class="modals modal-captcha">
+        <div class="modal-container-captcha">
+            <h2 class="modal-title-captcha">¡Complete the Captcha!</h2>
+            <div class="modal-recaptcha">
+                <div class="g-recaptcha" data-sitekey="6LdAG84qAAAAAIxRK5UifdZvhlxQMmDMH2-LZjRV" data-callback="enableSubmitButton"></div>
+            </div>
+            <div class="modal-actions-captcha">
+                <button id="captcha-submit-btn" class="btn disabled" disabled>Enviar</button>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Check Section -->
+    <section class="modals modal-check">
+        <div class="modal-container-check">
+            <h2 class="modal-title-check estado-message">!Estado de Mensaje¡</h2>
+            <div class="modal-icono-check">
+                <i class='bx bx-message-alt-check ico1'></i>
+            </div>
+            <a href="#" class="close-modal-check btn">Close</a>
+        </div>
+    </section>
+    <!---End Contac me--->
+
+
+    <!---Footer Section Code--->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/michelsr145" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Michelito-sr145" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/michel.sr145" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/Michel.sr145" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://x.com/Michel_sr145" target="_blank"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="copyright">
+            &copy; Michelito145 | All Rights Reserved
+        </p>
+        <div class="end-web">
+            <img src="assets/Skills/Languages/html.png" alt="HTML">
+            <img src="assets/Skills/Languages/css.png" alt="CSS">
+            <img src="assets/Skills/Languages/javascript.png" alt="JavaScript">
+            <p class="update">last modified: 15/04/2025</p>
+        </div>
+    </footer>
+    <!---Script--->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YfnvmcHJFwf7bO4xB')
+    </script>
+    <!-- Archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
