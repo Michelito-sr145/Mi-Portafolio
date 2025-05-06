@@ -20,7 +20,4 @@ Este es mi portafolio personal, desarrollado con HTML, CSS y JavaScript. Aquí p
 
 ## 🌐 Enlace al sitio web
 
-[👉 Ver el portafolio online](https://michelito-sr145.github.io/Mi-Portafolio/)
-
-## 📁 Estructura general
-
+[Ver portafolio online](https://michelito-sr145.github.io/Mi-Portafolio/)
