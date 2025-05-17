@@ -16,7 +16,7 @@ Este es mi portafolio personal, desarrollado con HTML, CSS y JavaScript. Aquí p
 
 ## 📱 Responsive
 
-> 🛠️ Actualmente estoy aprendiendo a aplicar diseño responsive. En futuras versiones del portafolio, planeo adaptarlo completamente para dispositivos móviles y tablets.
+> 🛠️ Actualmente estoy aprendiendo a aplicar diseño responsive. En futuras versiones del portafolio, planeo adaptarlo completamente para dispositivos móviles y tablets. Por el momento esta creado para Monitores
 
 ## 🌐 Enlace al sitio web
 
