@@ -14,9 +14,9 @@ Este es mi portafolio personal, desarrollado con HTML, CSS y JavaScript. Aquí p
 - Modal con descripciones detalladas de skills y tecnologías
 - Carrusel de imágenes para mostrar los proyectos
 
-## 📱 Responsive
+## 🛠️ En Desarrollo
 
-> 🛠️ Actualmente estoy aprendiendo a aplicar diseño responsive. En futuras versiones del portafolio, planeo adaptarlo completamente para dispositivos móviles y tablets. Por el momento esta diseñado para Monitores
+> 📱 Responsive- Actualmente estoy aprendiendo a aplicar diseño responsive. En futuras versiones del portafolio, planeo adaptarlo completamente para dispositivos móviles y tablets. Por el momento esta diseñado para Monitores
 
 ## 🌐 Enlace al sitio web
 
