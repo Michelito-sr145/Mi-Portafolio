@@ -18,22 +18,34 @@
         <a href="#home" class="logo" translate="no">Michel Salazar</a>
         <div class='bx bx-menu' id="menu-icon"></div>
         <ul class="navbar">
-            <li> <a href="#home">Home</a></li>
-            <li> <a href="#about">About me</a></li>
-            <li> <a href="#skills">skills</a></li>
-            <li> <a href="#portfolio">Portfolio</a></li>
+            <li class="lang-item">
+                <div class="lang-toggle">
+                    <input type="checkbox" class="check" id="lang-switch">
+                </div>
+            </li>
+            <li> <a href="#home" data-lang="t1">Home</a></li>
+            <li> <a href="#about" data-lang="t2">About me</a></li>
+            <li> <a href="#skills" data-lang="t3">Skills</a></li>
+            <li> <a href="#proyects" data-lang="t4">Proyects</a></li>
         </ul>
         <div class="top-btn">
-            <a href="#contact" class="nav-btn btnContac">Contact Me</a>
+            <a href="#contact" class="nav-btn btnContac" data-lang="t5">Contact Me</a>
         </div>
     </header>
+
     <!---Home Section Code--->
     <section class="home" id="home">
+        <div class="home-img">
+            <img src="assets/Me/mifotoMS.jpg" alt="Profile image">
+        </div>
         <div class="home-content">
             <div class="home-text">
-                <h3>Hi, I am</h3>
+                <h2 data-lang="home1">Hello, I'm</h2>
                 <h1 translate="no">Michel Salazar</h1>
-                <h3>a <span class="multiple-text"></span></h3>
+                <h2>
+                    <span class="typed-prefix" data-lang="home2">a</span>
+                    <span> ¡</span><span class="multiple-text"></span>
+                </h2>
             </div>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/michelsr145" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -43,226 +55,258 @@
                 <a href="https://x.com/Michel_sr145" target="_blank"><i class='bx bxl-twitter'></i></a>
             </div>
             <div class="home-cv">
-                <a href="assets/cv/CV_Michel_Salazar.pdf" target="_blank" class="btn">Open the CV</a>
+                <a href="assets/cv/CV_Michel_Salazar.pdf" target="_blank" class="btn" data-lang="home3">Open the CV</a>
             </div>
         </div>
-        <div class="home-img">
-            <img src="assets/Me/mifotoMS.jpg" alt="Profile image">
+    </section>
+
+            <!--Todos los Modals falta trad-->
+    <!---Modal Studie--->
+    <section class="modals modal-studie">
+        <div class="modal-container-studie">
+            <h3 class="modal-title-studie">Título dinámico</h3>
+            <p class="modal-descrip-studie">Descripción dinámica</p>
+            <div class="modal-actions-studie">
+                <a href="#" class="modal-foto-studie btn" target="_blank">
+                    <i class='bx bxs-graduation'></i><span class="btn-text" data-lang="m_est1">Title</span>
+                </a>
+                <a href="#" class="modal-link-studie btn" target="_blank">
+                    <i class='bx bx-map'></i><span class="btn-text" data-lang="m_est2">Location</span>
+                </a>
+                <a href="#" class="modal-close-studie btn">
+                    <i class='bx bx-exit-fullscreen'></i><span class="btn-text" data-lang="m_est3">Close</span>
+                </a>
+            </div>
         </div>
     </section>
-    <!---End Home--->
+    <!---Modal Skills--->
+    <section class="modals modal-skills">
+        <div class="modal-container-skills">
+            <div class="modal-content-skills">
+                <h2 class="modal-title-skills">Título dinámico</h2>
+                <p class="modal-descrip-skills">Descripción dinámica</p>
+            </div>
+            <a href="#" class="modal-close-skills btn">
+                <i class='bx bx-exit-fullscreen'></i>
+                <p data-lang="m_est3">Cerrar</p>
+            </a>
 
+        </div>
+    </section>
+    <!-- Modal Captcha Section -->
+    <section class="modals modal-captcha">
+        <div class="modal-container-captcha">
+            <h3 class="modal-title-captcha" >¡Complete the Captcha!</h3>
+            <div class="modal-recaptcha">
+                <div class="g-recaptcha" data-sitekey="6LdAG84qAAAAAIxRK5UifdZvhlxQMmDMH2-LZjRV" data-callback="enableSubmitButton"></div>
+            </div>
+            <div class="modal-actions-captcha">
+                <button id="captcha-submit-btn" class="btn disabled" disabled data-lang="m_est4">Send</button>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Check Section -->
+    <section class="modals modal-check">
+        <div class="modal-container-check">
+            <h3 class="modal-title-check estado-message">¡Estado de Mensaje!</h3>
+            <div class="modal-icono-check">
+                <i class='bx bx-message-alt-check ico1'></i>
+            </div>
+            <a href="#" class="close-modal-check btn" data-lang="m_est3">Close</a>
+        </div>
+    </section>
+            <!--End Modals-->
 
     <!---AboutMe and Studie Section Code--->
     <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
+        <h2 class="heading">
+            <span class="typed-prefix" data-lang="About1">About</span>
+            <span data-lang="About2">Me</span>
+        </h2>
         <div class="about-content">
             <div class="about-me">
-                <h3>I am a developer <span translate="no">Full Stack</span></h3>
-                <p>Passionate about creating innovative and functional solutions.
+                <h3>
+                    <span class="typed-prefix" data-lang="About3">I am a developer </span>
+                    <span translate="no" data-lang="About4">Full Stack</span>
+                </h3>
+                <p data-lang="About5">Passionate about creating innovative and functional solutions.
                     With experience in developing web applications, designing intuitive interfaces and implementing robust
                     systems, I am always looking to learn and improve my skills to deliver high-quality projects.
                     I love taking on new challenges and collaborating in dynamic teams.</p>
             </div>
             <div class="studies-content">
                 <div class="studies-box">
-                    <h3>Academic studies</h3>
+                    <h2 data-lang="About6">Academic studies</h2>
                     <div class="education">
                         <div class="edu-item edu1">
                             <div>
-                                <h4>Technical School No.19 Alejandro Volta</h4>
-                                <p>Electronics Technician </p>
-                            </div>
-                            <div>
-                                <i class='bx bx-expand bx-burst bx-rotate-90' ></i>
+                                <h5><span data-lang="About7">Technical School No.19 Alejandro Volta</span></h5>
+                                <h4>
+                                    <span class="typed-prefix" data-lang="About8">Electronics Technician </span>
+                                    <span class="typed-prefix"><i class='bx bx-expand bx-burst bx-rotate-90' ></i></span>
+                                </h4>
                             </div>
                         </div>
                         <div class="edu-item edu2">
                             <div>
-                                <h4>Faculty of Engineering - UNLZ</h4>
-                                <p>Technician in Programming</p>
-                            </div>
-                            <div>
-                                <i class='bx bx-expand bx-burst bx-rotate-90' ></i>
+                                <h5><span data-lang="About9">Faculty of Engineering - UNLZ</span></h5>
+                                <h4>
+                                    <span class="typed-prefix" data-lang="Abou1t0">Technician in Programming</span>
+                                    <span class="typed-prefix"><i class='bx bx-expand bx-burst bx-rotate-90' ></i></span>
+                                </h4>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="studies-box">
-                    <h3>Self-taught courses</h3>
+                    <h2 data-lang="Abou1t1">Self-taught courses</h2>
                     <div class="courses">
                         <div class="course-item C1">
-                            Java Programming - <span translate="no"> Programación ATS</span>
-                            <i class="bx bxl-youtube youtube-icon"></i>
+                            <h6>Java Programming<span translate="no"> Programación ATS</span><i class="bx bxl-youtube youtube-icon"></i></h6>
                         </div>
                         <div class="course-item C2">
-                            HTML and CSS, Web Development - <span translate="no"> Soy Dalto</span>
-                            <i class="bx bxl-youtube youtube-icon"></i>
+                            <h6>HTML and CSS, Web Development<span translate="no"> Soy Dalto<i class="bx bxl-youtube youtube-icon"></i></span></h6>
                         </div>
                         <div class="course-item C3">
-                            Python for backend development - <span translate="no"> MoureDev</span>
-                            <i class="bx bxl-youtube youtube-icon"></i>
+                            <h6>Python for backend development<span translate="no"> MoureDev<i class="bx bxl-youtube youtube-icon"></i></span></h6>
                         </div>
                         <div class="course-item C4">
-                            Python for Beginners - <span translate="no"> Soy Dalto</span>
-                            <i class="bx bxl-youtube youtube-icon"></i>
+                            <h6>Python for Beginners<span translate="no"> Soy Dalto<i class="bx bxl-youtube youtube-icon"></i></span></h6>
                         </div>
                         <div class="course-item C5">
-                            Visual Studio Code - <span translate="no"> HolaMundo</span>
-                            <i class="bx bxl-youtube youtube-icon"></i>
+                            <h6>Visual Studio Code<span translate="no"> HolaMundo<i class="bx bxl-youtube youtube-icon"></i></span></h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!---Modal Studie Section Code--->
-    <section class="modals modal-studie">
-        <div class="modal-container-studie">
-            <div class="modal-content-studie">
-                <h2 class="modal-title-studie heading">Título dinámico</h2>
-                <p class="modal-descrip-studie">Descripción dinámica</p>
-                <div class="modal-actions-studie">
-                    <a href="#" class="modal-foto-studie btn" target="_blank"><i class='bx bxs-graduation'></i>Certificate</a>
-                    <a href="#" class="modal-link-studie btn" target="_blank"> <i class='bx bx-map'></i>Location</a>
-                </div>
-                <a href="#" class="modal-close-studie btn"><i class='bx bx-exit-fullscreen'></i> Cerrar </a>
-            </div>
-        </div>
-    </section>
-    <!---End AboutMe--->
-
 
     <!---Skills Section Code--->
     <section class="skills" id="skills">
-        <h2 class="heading" >Skills <i class='bx bx-expand bx-burst bx-rotate-90' ></i></h2>
+        <h2 class="heading" >
+            <span class="typed-prefix" data-lang="t3">Skills</span>
+            <span><i class='bx bx-expand bx-burst bx-rotate-90' ></i></span>
+        </h2>
+        
         <div class="skills-content">
             <!---Programming Languages--->
             <div class="skills-box">
-                <h2>Programming Languages</h2>
+                <h4 data-lang="skill2">Programming Languages</h4>
                 <div class="skills-lenguaje">
                     <div class="media java effect">
                         <img src="assets/Skills/Languages/java.png" alt="Java">
-                        <h3 translate="no">Java</h3>
+                        <h5 translate="no">Java</h5>
                     </div>
                     <div class="media python effect">
                         <img src="assets/Skills/Languages/Python.png" alt="Python">
-                        <h3 translate="no">Python</h3>
+                        <h5 translate="no">Python</h5>
                     </div>
                     <div class="media html effect">
                         <img src="assets/Skills/Languages/HTML.png" alt="HTML">
-                        <h3 translate="no">HTML</h3>
+                        <h5 translate="no">HTML</h5>
                     </div>
                     <div class="media css effect">
                         <img src="assets/Skills/Languages/CSS.png" alt="CSS">
-                        <h3 translate="no">CSS</h3>
+                        <h5 translate="no">CSS</h5>
                     </div>
                     <div class="media javascript effect">
                         <img src="assets/Skills/Languages/JavaScript.png" alt="JavaScript">
-                        <h3 translate="no">JavaScript</h3>
+                        <h5 translate="no">JavaScript</h5>
                     </div>
                     <div class="media vb_net effect">
                         <img src="assets/Skills/Languages/VB,NET.png" alt="VB.NET">
-                        <h3 translate="no">VB.NET</h3>
+                        <h5 translate="no">VB.NET</h5>
                     </div>
                 </div>
             </div>
             <!---Development Environments--->
             <div class="skills-box">
-                <h2>Development Environments</h2>
+                <h4 data-lang="skill3">Development Environments</h4>
                 <div class="skills-lenguaje">
                     <div class="media">
                         <img src="assets/Skills/IDE/EclipseIDE.png" alt="Eclipse IDE">
-                        <h3 translate="no">Eclipse IDE</h3>
+                        <h5 translate="no">Eclipse IDE</h5>
                     </div>
                     <div class="media">
                         <img src="assets/Skills/IDE/VisualStudio.png" alt="Visual Studio">
-                        <h3 translate="no">Visual Studio</h3>
+                        <h5 translate="no">Visual Studio</h5>
                     </div>
                     <div class="media visualstudiocode effect">
                         <img src="assets/Skills/IDE/VisualStudioCode.png" alt="Visual Studio Code">
-                        <h3 translate="no">Visual Studio Code</h3>
+                        <h5 translate="no">Visual Studio Code</h5>
                     </div>
                 </div>
             </div>
             <!---Database--->
             <div class="skills-box">
-                <h2>Database</h2>
+                <h4 data-lang="skill4">Database</h4>
                 <div class="skills-lenguaje">
                     <div class="media mysql effect">
                         <img src="assets/Skills/Database/MySQL.png" alt="MySQL">
-                        <h3 translate="no">MySQL</h3>
+                        <h5 translate="no">MySQL</h5>
                     </div>
                     <div class="media sqlServer effect">
                         <img src="assets/Skills/Database/SQL-Server.png" alt="SQL Server">
-                        <h3 translate="no">SQL Server</h3>
+                        <h5 translate="no">SQL Server</h5>
                     </div>
                 </div>
             </div>
             <!---Tools--->
             <div class="skills-box">
-                <h2>Tools</h2>
+                <h4 data-lang="skill5">Tools</h4>
                 <div class="skills-lenguaje">
                     <div class="media xampp effect">
                         <img src="assets/Skills/Tools/xampp.png" alt="XAMPP">
-                        <h3 translate="no">XAMPP</h3>
+                        <h5 translate="no">XAMPP</h5>
                     </div>
                     <div class="media postman effect">
                         <img src="assets/Skills/Tools/Postman.png" alt="Postman">
-                        <h3 translate="no">Postman</h3>
+                        <h5 translate="no">Postman</h5>
                     </div>
                 </div>
             </div>
             <div class="skills-box">
-                <h2>Languages</h2>
+                <h4 data-lang="skill6">Languages</h4>
                 <div class="skills-lenguaje">
                     <!-- Español -->
                     <div class="media">
-                    <p class="lang-level">Spanish</p>
-                    <img src="assets/Skills/Lang/Español.png" alt="Spanish">
-                    <h3>Native</h3>
+                        <h4 class="lang-level" data-lang="skill7">Spanish</h4>
+                        <img src="assets/Skills/Lang/Español.png" alt="Spanish">
+                        <h5 data-lang="skill8">Native</h5>
                     </div>
                     <!-- Inglés -->
                     <div class="media">
-                    <p class="lang-level">English</p>
-                    <img src="assets/Skills/Lang/Ingles.png" alt="English">
-                    <h3>Básic (A2)</h3>
+                        <h4 class="lang-level" data-lang="skill9">English</h4>
+                        <img src="assets/Skills/Lang/Ingles.png" alt="English">
+                        <h5 data-lang="skill0">Básic (A2)</h5>
                     </div>
                 </div>
         </div>
     </section>
-    <!---Modal Skills Section Code--->
-    <section class="modals modal-skills">
-        <div class="modal-container-skills">
-            <div class="modal-content-skills">
-                <h2 class="modal-title-skills heading">Título dinámico</h2>
-                <p class="modal-descrip-skills">Descripción dinámica</p>
-            </div>
-            <a href="#" class="modal-close-skills btn"><i class='bx bx-exit-fullscreen'></i> Cerrar </a>
-        </div>
-    </section>
-    <!---End Skills--->
-
 
     <!---Proyect Section Code--->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading"><span>Projects</span></h2>
+    <section class="proyects" id="proyects">
+        <h2 class="heading">
+            <span class="typed-prefix" data-lang="proyt1"> My </span>
+            <span data-lang="proyt2"> Projects</span>
+        </h2>
         <div class="portfolio-content">
             <!---TallerTextil--->
             <div class="row">
                 <!-- Carrusel -->
                 <div class="carousel">
                     <div class="carousel-container">
-                        <img src="assets/Proyects/TallerTextil/1.png">
-                        <img src="assets/Proyects/TallerTextil/2.png">
-                        <img src="assets/Proyects/TallerTextil/3.png">
-                        <img src="assets/Proyects/TallerTextil/4.png">
-                        <img src="assets/Proyects/TallerTextil/5.png">
-                        <img src="assets/Proyects/TallerTextil/6.png">
-                        <img src="assets/Proyects/TallerTextil/7.png">
-                        <img src="assets/Proyects/TallerTextil/8.png">
-                        <img src="assets/Proyects/TallerTextil/9.png">
-                        <img src="assets/Proyects/TallerTextil/10.png">
+                        <img src="assets/Proyects/TallerTextil/1.png" alt="Taller Textil image 1">
+                        <img src="assets/Proyects/TallerTextil/2.png" alt="Taller Textil image 2">
+                        <img src="assets/Proyects/TallerTextil/3.png" alt="Taller Textil image 3">
+                        <img src="assets/Proyects/TallerTextil/4.png" alt="Taller Textil image 4">
+                        <img src="assets/Proyects/TallerTextil/5.png" alt="Taller Textil image 5">
+                        <img src="assets/Proyects/TallerTextil/6.png" alt="Taller Textil image 6">
+                        <img src="assets/Proyects/TallerTextil/7.png" alt="Taller Textil image 7">
+                        <img src="assets/Proyects/TallerTextil/8.png" alt="Taller Textil image 8">
+                        <img src="assets/Proyects/TallerTextil/9.png" alt="Taller Textil image 9">
+                        <img src="assets/Proyects/TallerTextil/10.png" alt="Taller Textil image 0">
                     </div>
                     <label for="slide1" class="prev">&#10094;</label>
                     <label for="slide2" class="next">&#10095;</label>
@@ -275,18 +319,18 @@
                 </div>
                 <!-- Información principal -->
                 <div class="main">
-                    <h4>Taller Textil</h4>
-                    <p>Desktop application that enables management of textile supply entries, exits, and stock through a modern, functional interface. It implements full CRUD operations and inventory flow control.</p>
+                    <h4 data-lang="proy1">Taller Textil</h4>
+                    <p data-lang="proy2">Desktop application that enables management of textile supply entries, exits, and stock through a modern, functional interface. It implements full CRUD operations and inventory flow control.</p>
                 </div>
                 <!-- Tecnologías usadas Y Links-->
                 <div class="portfolio-skills">
                     <div class="tech-stack">
-                        <img src="assets/Skills/Database/SQL-Server.png" alt="">
-                        <img src="assets/Skills/IDE/VisualStudio.png" alt="">
-                        <img src="assets/Skills/Languages/VB,NET.png" alt="">
+                        <img src="assets/Skills/Database/SQL-Server.png" alt="SQL Server">
+                        <img src="assets/Skills/IDE/VisualStudio.png" alt="Visual Studio">
+                        <img src="assets/Skills/Languages/VB,NET.png" alt="Vb net">
                     </div>
                     <div class="link-portfolio">
-                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/Michelito-sr145/Taller-Textil" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
@@ -295,42 +339,42 @@
                 <!-- Carrusel -->
                 <div class="carousel">
                     <div class="carousel-container">
-                        <img src="assets/Proyects/SistemaWeb/1.png">
-                        <img src="assets/Proyects/SistemaWeb/2.png">
-                        <img src="assets/Proyects/SistemaWeb/3.png">
-                        <img src="assets/Proyects/SistemaWeb/4.png">
-                        <img src="assets/Proyects/SistemaWeb/5.png">
-                        <img src="assets/Proyects/SistemaWeb/6.png">
-                        <img src="assets/Proyects/SistemaWeb/7.png">
-                        <img src="assets/Proyects/SistemaWeb/8.png">
-                        <img src="assets/Proyects/SistemaWeb/9.png">
-                        <img src="assets/Proyects/SistemaWeb/10.png">
-                        <img src="assets/Proyects/SistemaWeb/11.png">
-                        <img src="assets/Proyects/SistemaWeb/12.png">
+                        <img src="assets/Proyects/SistemaWeb/1.png" alt="Nutricion Animal image 1">
+                        <img src="assets/Proyects/SistemaWeb/2.png" alt="Nutricion Animal image 2">
+                        <img src="assets/Proyects/SistemaWeb/3.png" alt="Nutricion Animal image 3">
+                        <img src="assets/Proyects/SistemaWeb/4.png" alt="Nutricion Animal image 4">
+                        <img src="assets/Proyects/SistemaWeb/5.png" alt="Nutricion Animal image 5">
+                        <img src="assets/Proyects/SistemaWeb/6.png" alt="Nutricion Animal image 6">
+                        <img src="assets/Proyects/SistemaWeb/7.png" alt="Nutricion Animal image 7">
+                        <img src="assets/Proyects/SistemaWeb/8.png" alt="Nutricion Animal image 8">
+                        <img src="assets/Proyects/SistemaWeb/9.png" alt="Nutricion Animal image 9">
+                        <img src="assets/Proyects/SistemaWeb/10.png" alt="Nutricion Animal image 0">
+                        <img src="assets/Proyects/SistemaWeb/11.png" alt="Nutricion Animal image 11">
+                        <img src="assets/Proyects/SistemaWeb/12.png" alt="Nutricion Animal image 12">
                     </div>
                     <label for="slide1" class="prev">&#10094;</label>
                     <label for="slide2" class="next">&#10095;</label>
                     <a class="type-app web type">
                         <i class='bx bx-globe'></i><span class="tooltip">Website</span>
                     </a>
-                    <a class="type-status Academic type">
+                    <a class="type-status academic type">
                         <i class='bx bxs-graduation'></i><span class="tooltip">Academic</span>
                     </a>
                 </div>
                 <!-- Información principal -->
                 <div class="main">
-                    <h4>Nutricion Animal</h4>
-                    <p>It was a web platform developed as an academic project, focused on managing food requests for different animal species. It allows both users and administrators to register and log in. Users can request products based on the type of animal, while administrators have access to order management, stock control, and user administration features.</p>
+                    <h4 data-lang="proy3">Nutricion Animal</h4>
+                    <p data-lang="proy4">It was a web platform developed as an academic project, focused on managing food requests for different animal species. It allows both users and administrators to register and log in. Users can request products based on the type of animal, while administrators have access to order management, stock control, and user administration features.</p>
                 </div>
                 <!-- Tecnologías usadas -->
                 <div class="portfolio-skills">
                     <div class="tech-stack">
-                        <img src="assets/Skills/Database/SQL-Server.png" alt="">
-                        <img src="assets/Skills/IDE/VisualStudio.png" alt="">
-                        <img src="assets/Skills/Languages/VB,NET.png" alt="">
+                        <img src="assets/Skills/Database/SQL-Server.png" alt="SQL Server">
+                        <img src="assets/Skills/IDE/VisualStudio.png" alt="Visual Studio">
+                        <img src="assets/Skills/Languages/VB,NET.png" alt="Vb net">
                     </div>
                     <div class="link-portfolio">
-                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/Michelito-sr145/Nutricion-Animal" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
@@ -339,9 +383,9 @@
                 <!-- Carrusel -->
                 <div class="carousel">
                     <div class="carousel-container">
-                        <img src="assets/Proyects/OffPc/1.png" alt="">
-                        <img src="assets/Proyects/OffPc/2.png" alt="">
-                        <img src="assets/Proyects/OffPc/3.png" alt="">
+                        <img src="assets/Proyects/OffPc/1.png" alt="Off Pc image 1">
+                        <img src="assets/Proyects/OffPc/2.png" alt="Off Pc image 2">
+                        <img src="assets/Proyects/OffPc/3.png" alt="Off Pc image 3">
                     </div>
                     <label for="slide1" class="prev">&#10094;</label>
                     <label for="slide2" class="next">&#10095;</label>
@@ -354,17 +398,21 @@
                 </div>
                 <!-- Información principal -->
                 <div class="main">
-                    <h4>App OffPc</h4>
-                    <p>Application developed with <span>Tkinter</span> that lets you set a timer to automatically shut down the operating system (Windows only). When the countdown ends, it displays a farewell message before executing the shutdown command.</p>
+                    <h4 data-lang="proy5">App OffPc</h4>
+                    <p>
+                        <span class="typed-prefix" data-lang="proy6">Application developed with</span>
+                        <span data-lang="proy6_2">Tkinter</span> 
+                        <span class="typed-prefix" data-lang="proy6_3">that lets you set a timer to automatically shut down the operating system (Windows only). When the countdown ends, it displays a farewell message before executing the shutdown command.</span>
+                    </p>
                 </div>
                 <!-- Tecnologías usadas -->
                 <div class="portfolio-skills">
                     <div class="tech-stack">
-                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="">
-                        <img src="assets/Skills/Languages/Python.png" alt="">
+                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="Visual Studio Code">
+                        <img src="assets/Skills/Languages/Python.png" alt="Python">
                     </div>
                     <div class="link-portfolio">
-                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/Michelito-sr145/Off-Pc" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
@@ -373,8 +421,8 @@
                 <!-- Carrusel -->
                 <div class="carousel">
                     <div class="carousel-container">
-                        <img src="assets/Proyects/Clean-Pc/1.png" alt="">
-                        <img src="assets/Proyects/Clean-Pc/2.png" alt="">
+                        <img src="assets/Proyects/Clean-Pc/1.png" alt="Cleam Pc image 1">
+                        <img src="assets/Proyects/Clean-Pc/2.png" alt="Cleam Pc image 2">
                     </div>
                     <label for="slide1" class="prev">&#10094;</label>
                     <label for="slide2" class="next">&#10095;</label>
@@ -387,39 +435,46 @@
                 </div>
                 <!-- Información principal -->
                 <div class="main">
-                    <h4>Cleam PC</h4>
-                    <p>This application cleans the PC by removing unnecessary files from the <span>“Temp”, “%temp%”,</span> and <span>“Prefetch”</span> folders. Once the process is complete, it creates a <span>.txt</span> file listing the paths of any files that could not be deleted.</p>
+                    <h4 data-lang="proy7">Cleam PC</h4>
+                    <p>
+                        <span data-lang="proy8" class="typed-prefix">This application cleans the PC by removing unnecessary files from the </span> 
+                        <span data-lang="proy8_2">“Temp”, “%temp%”,</span> 
+                        <span data-lang="proy8_3" class="typed-prefix">and </span> 
+                        <span data-lang="proy8_4">“Prefetch”</span> 
+                        <span data-lang="proy8_5" class="typed-prefix">folders. Once the process is complete, it creates a </span> 
+                        <span data-lang="proy8_6">.txt</span> 
+                        <span data-lang="proy8_7" class="typed-prefix">file listing the paths of any files that could not be deleted.</span> 
+                    </p>
                 </div>
                 <!-- Tecnologías usadas -->
                 <div class="portfolio-skills">
                     <div class="tech-stack">
-                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="">
-                        <img src="assets/Skills/Languages/Python.png" alt="">
+                        <img src="assets/Skills/IDE/VisualStudioCode.png" alt="visual studio code">
+                        <img src="assets/Skills/Languages/Python.png" alt="Python">
                     </div>
                     <div class="link-portfolio">
-                        <a href="https://github.com/usuario/proyecto" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://github.com/Michelito-sr145/Clean-Pc" target="_blank"><i class='bx bxl-github'></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!---End Proyect--->
-
 
     <!---Contac me Section Code--->
     <section class="contact" id="contact">
-        <h2 class="heading" >Contact<span>Me</span></h2>
+        <h2 class="heading" >
+            <span class="typed-prefix" data-lang="contac1">Contact</span><span data-lang="contac2">Me</span>
+        </h2>
         <div class="contact-content">
             <div class="contact-perfil">
                 <img src="assets/Me/Dibujo.jpg" alt="Profile Picture of Michel" class="profile-photo">
-                <div class="social-media">
+                <div class="social-media social-contatc">
                     <a href="https://wa.me/+5491167623090" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="https://discord.gg/michelito145#4377" target="_blank"><i class='bx bxl-discord-alt' ></i></a>
                     <a href="https://mail.google.com/mail/?view=cm&to=michelroncal2002@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
                 </div>
             </div>
             <div class="contact-Form">
-                <p class="warning">Fill out the form with your name, number or email, and your message.</p>
+                <h6 class="warning" data-lang="contac3">Fill out the form with your name, number or email, and your message.</h6>
                 <form id="contact-form">
                     <div class="input-box">
                         <input type="text" id="fullName" placeholder="Full Name">
@@ -429,53 +484,22 @@
                         <input type="email" id="email" placeholder="Email Address">
                     </div>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                    <button type="button" id="send-btn" class="btn disabled" disabled>Send Message</button>
+                    <button data-lang="contac4" type="button" id="send-btn" class="btn disabled" disabled>Send Message</button>
                 </form>
             </div>
         </div>
     </section>
-    <!-- Modal Captcha Section -->
-    <section class="modals modal-captcha">
-        <div class="modal-container-captcha">
-            <h2 class="modal-title-captcha">¡Complete the Captcha!</h2>
-            <div class="modal-recaptcha">
-                <div class="g-recaptcha" data-sitekey="6LdAG84qAAAAAIxRK5UifdZvhlxQMmDMH2-LZjRV" data-callback="enableSubmitButton"></div>
-            </div>
-            <div class="modal-actions-captcha">
-                <button id="captcha-submit-btn" class="btn disabled" disabled>Enviar</button>
-            </div>
-        </div>
-    </section>
-    <!-- Modal Check Section -->
-    <section class="modals modal-check">
-        <div class="modal-container-check">
-            <h2 class="modal-title-check estado-message">!Estado de Mensaje¡</h2>
-            <div class="modal-icono-check">
-                <i class='bx bx-message-alt-check ico1'></i>
-            </div>
-            <a href="#" class="close-modal-check btn">Close</a>
-        </div>
-    </section>
-    <!---End Contac me--->
-
 
     <!---Footer Section Code--->
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/michelsr145" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/Michelito-sr145" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/michel.sr145" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.facebook.com/Michel.sr145" target="_blank"><i class='bx bxl-facebook'></i></a>
-            <a href="https://x.com/Michel_sr145" target="_blank"><i class='bx bxl-twitter'></i></a>
-        </div>
-        <p class="copyright">
-            &copy; Michelito145 | All Rights Reserved
-        </p>
         <div class="end-web">
             <img src="assets/Skills/Languages/HTML.png" alt="HTML">
             <img src="assets/Skills/Languages/CSS.png" alt="CSS">
             <img src="assets/Skills/Languages/JavaScript.png" alt="JavaScript">
         </div>
+        <p class="copyright">
+            &copy; Michelito145 | All Rights Reserved
+        </p>
     </footer>
     <!---Script--->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -488,5 +512,5 @@
     </script>
     <!-- Archivo de JavaScript -->
     <script src="script.js"></script>
+
 </body>
-</html>
