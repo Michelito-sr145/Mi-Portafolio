@@ -320,7 +320,7 @@ header{
     height: var(--switch-h);
     background-size: var(--icon-size) var(--icon-size);
     border-radius: var(--switch-h);
-    background-image: url('/assets/Skills/Lang/Es.png');
+    background-image: url('assets/Skills/Lang/Es.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-color: #333;
@@ -330,7 +330,7 @@ header{
     transition: background-image 0.25s, filter 0.25s;
 }
 .check:checked:before {
-    background-image: url('/assets/Skills/Lang/En.png');
+    background-image: url('assets/Skills/Lang/En.png');
     background-position: left center;
     filter: grayscale(100%) brightness(0.6);
     background-color: #3b3bff;
@@ -341,7 +341,7 @@ header{
     width: var(--thumb-size);
     height: var(--thumb-size);
     background-color: #fff;
-    background-image: url('/assets/Skills/Lang/En.png');
+    background-image: url('assets/Skills/Lang/En.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -353,7 +353,7 @@ header{
 }
 .check:checked:after {
     left: var(--thumb-size);
-    background-image: url('/assets/Skills/Lang/Es.png');
+    background-image: url('assets/Skills/Lang/Es.png');
 }
 
 /*============================HOME SECTION============================*/
